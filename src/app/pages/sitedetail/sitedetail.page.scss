@@ -1,0 +1,100 @@
+// * {
+//   .choice {
+//     opacity: 1;
+//   }
+//   .notifoverwatering {
+//     background-color: blue;
+//   }
+//   .notifkenahama {
+//     background-color: chocolate;
+//   }
+//   .notifkurangsinarmatahari {
+//     background-color: lightgrey;
+//   }
+//   .notiflayu {
+//     background-color: #8d8d8d;
+//   }
+// }
+// *:hover {
+//   .choice:hover {
+//     opacity: 1;
+//     .notif:hover {
+//       background-color: lightcoral;
+//     }
+//   }
+//   .notifoverwatering:hover {
+//     background-color: darkblue;
+//   }
+//   .notifkenahama:hover {
+//     background-color: brown;
+//   }
+//   .notifkurangsinarmatahari:hover {
+//     background-color: darkgray;
+//   }
+//   .notiflayu:hover {
+//     background-color: #3d3d3d;
+//   }
+// }
+// .gelow:hover {
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+//     // .gelow:hover {
+
+//     // }
+// }
+/* Scale up the box */
+// .gelow:hover {
+//   transform: scale(1.2, 1.2);
+// }
+
+// /* Fade in the pseudo-element with the bigger shadow */
+// .gelow:hover::after {
+//   opacity: 1;
+// }
+// .gelow {
+// //   position: relative;
+// //   display: inline-block;
+// //   width: 100px;
+// //   height: 100px;
+// //   background-color: #fff;
+// //   border-radius: 5px;
+// //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+// //   border-radius: 5px;
+//   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+// }
+
+// .gelow::after {
+//   content: "";
+// //   border-radius: 5px;
+// //   position: absolute;
+//   z-index: -1;
+// //   top: 0;
+// //   left: 0;
+// //   width: 100%;
+// //   height: 100%;
+// //   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+//   opacity: 0;
+//   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+// }
+
+// .gelow:hover {
+//   -webkit-transform: scale(1.25, 1.25);
+//   transform: scale(1.25, 1.25);
+// }
+
+// .gelow:hover::after {
+//   opacity: 1;
+// }
+// button {
+//   ion-badge {
+//     position: absolute;
+//     top: -0.2rem;
+//     right: -0.2rem;
+//     opacity: 0.9;
+
+//     & ~ ion-icon {
+//       margin-right: 1.2rem;
+//     }
+//   }
+// }

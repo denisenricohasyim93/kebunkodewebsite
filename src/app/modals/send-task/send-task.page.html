@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color:darkseagreen;font-weight: bold">Send Task - Ketik pada Kotak Abu - Abu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-textarea
+    style="background-color:lightgray;width: 100%;height:75%"
+  ></ion-textarea>
+  <div style="width: 100%;height: 35px;display: flex; align-items:center;justify-content:center;position: absolute;bottom: 20px">
+    <div (click)="kirimTugasBeneran()" style="width: 30%;height: 35px;display: flex; align-items:center;justify-content:center;background-color:mediumseagreen;border-radius: 20px">
+      <p style="width: 100%;text-align:center;color: white">Send</p>
+    </div>
+  </div>
+</ion-content>

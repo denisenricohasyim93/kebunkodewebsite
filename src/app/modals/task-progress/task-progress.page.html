@@ -1,0 +1,201 @@
+<ion-header style="width: 100%;height:75px">
+  <div
+    style="background-color: transparent;width: 100%;height: 100%;display: flex;flex-direction: row;align-items: center;justify-content: center;"
+  >
+    <div
+      style="width: 70%;display: flex;background-color: transparent;height: 100%;align-items: center;justify-content: flex-start;flex-direction: row"
+    >
+      <div style="background-color: transparent; width: null;height: null">
+        <p style="color:darkseagreen;font-weight: bold;margin-left: 20px;font-size: 20px">
+          Task Progress
+        </p>
+        <!-- <p style="color:white;margin: 0px">Flowers</p> -->
+      </div>
+      <!-- <p style="background-color:#E6EEED;color: #414B59;padding: 8px;margin-left:100px;width:9.5%;text-align: center;border-radius: 15px;font-size: 13px;font-style: italic"><b>FARM</b></p>
+          <p style="color: #E6EEED;padding: 8px;margin-left:20px;width:9.5%;text-align: center;border-radius: 15px;font-size: 13px;font-style: italic"><b>INVENTORY</b></p>
+          <p style="color: #E6EEED;padding: 8px;margin-left:20px;width:9.5%;text-align: center;border-radius: 15px;font-size: 13px;font-style: italic"><b>SALES</b></p>
+          <p style="color: #E6EEED;padding: 8px;margin-left:20px;width:9.5%;text-align: center;border-radius: 15px;font-size: 13px;font-style: italic"><b>NEWS</b></p> -->
+    </div>
+    <div
+      style="width: 30%;display: flex;background-color: transparent;height: 100%;align-items: center;justify-content: center"
+    >
+      <div
+        (click)="this.kembali()"
+        style="width: 75%;height: 70%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: mediumseagreen;
+            "
+      >
+        <p style="color: white;width: 100%;text-align: center;font-size: 20px">OK</p>
+      </div>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content padding>
+  <div
+    style="
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center
+        "
+  >
+    <div
+      style="
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+    >
+      <img
+        src="https://ccms.farmjournal.com/sites/default/files/corn_crop_-_Crop_Tour_0.jpg"
+        style="width: 100%;height:100%;object-fit:fill"
+      />
+    </div>
+    <div
+      style="
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+    >
+      <ion-grid
+        style="
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column
+            "
+      >
+        <ion-row
+          style="background-color: white;border: solid 0.25px black;width: 100%;height: 20%;"
+        >
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div>
+              Date
+            </div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div>
+              Task
+            </div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div>
+              Progress
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row
+          style="background-color: white;border: solid 0.25px black;width: 100%;height: 20%;"
+        >
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size: 12px;">
+              {{ this.tgl }}
+            </div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size:12px">Wiwil {{ this.tempat }}</div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size:12px">
+              In Progress
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row
+          style="background-color: white;border: solid 0.25px black;width: 100%;height: 20%;"
+        >
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size: 12px;">
+              {{ this.tgl }}
+            </div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size:12px">Wiwil {{ this.tempat }}</div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size:12px">
+              Done
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row
+          style="background-color: white;border: solid 0.25px black;width: 100%;height: 20%;"
+        >
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size: 12px;">
+              {{ this.tgl }}
+            </div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size:12px">Wiwil {{ this.tempat }}</div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size:12px">
+              Done
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row
+          style="background-color: white;border: solid 0.25px black;width: 100%;height: 20%;"
+        >
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size: 12px;">
+              {{ this.tgl }}
+            </div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size:12px">Wiwil {{ this.tempat }}</div>
+          </ion-col>
+          <ion-col
+            style="width: 33.33%;height: 100%;background-color: white;border: solid 0.25px black"
+          >
+            <div style="font-size:12px">
+              Done
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

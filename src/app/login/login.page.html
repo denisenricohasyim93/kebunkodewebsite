@@ -1,0 +1,18 @@
+<ion-content *ngIf="munculin">
+  <div [ngStyle]="{'height': height+'px'}" style="width: 100%;display:flex;align-items:center;justify-content:center;flex-direction:column;background-color: #FFFCF0">
+      <img class="gelow" src="./assets/IAELogoTransparent.png" style="width: 350px;height: 350px"/>
+      <div id="container">
+          <!-- <ion-list style="background-color: transparent"> -->
+              <ion-card class="gelow" id="rounded" [ngStyle]="{'width': widthTextInput+'px'}">
+                <ion-input clearInput (ionChange)="changeEmail($event)" [value]="email" id="masuk" placeholder=" put admin email here"></ion-input>
+              </ion-card>
+              <ion-card class="gelow" id="rounded" [ngStyle]="{'width': widthTextInput+'px'}">
+                <ion-input clearInput (ionChange)="changePassword($event)" [value]="password" id="masuk" placeholder=" put password here" type="Password"></ion-input>
+              </ion-card>
+              <ion-card class="gelow" (click)="submit()" id="button" [ngStyle]="{'width': widthTextInput+'px'}">
+                <p style="text-align:center;color: white;font-weight: bold;font-size: 15px;margin: 5px">LOGIN</p>
+              </ion-card>
+            <!-- </ion-list> -->
+      </div>
+  </div>
+</ion-content>

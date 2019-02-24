@@ -1,0 +1,7 @@
+{
+  "name": "ownerionic4",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

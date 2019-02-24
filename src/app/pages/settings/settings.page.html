@@ -1,0 +1,594 @@
+<ion-header no-border  style="width: 100%;display: flex;align-items: center;justify-content: center;
+" [ngStyle]="{ height: 100 + 'px' }">
+  <ion-card
+    class="gloww"
+    style="background-color: #1f2942;width: 98%;height: 80%;display: flex;flex-direction: row;align-items: center;justify-content: center;border-radius: 25px"
+  >
+    <div
+      [ngStyle]="{ width: headerWidth + 'px' }"
+      style="display: flex;background-color: transparent;height: 100%;align-items: center;justify-content: center"
+    >
+      <ion-menu-button class="gelow" style="color:white"></ion-menu-button>
+    </div>
+    <div
+      [ngStyle]="{ width: sisaHeaderWidth + 'px' }"
+      style="display: flex;background-color: transparent;height: 100%;align-items: center;justify-content: space-between;flex-direction: row"
+    >
+      <div style="background-color: transparent; width: 50%;height: 100%;background-color: transparent;display: flex;align-items: center;justify-content: center">
+        <!-- <p style="color:white;margin: 0px;width: 100%;text-align: left">{{ this.full_name }}'s</p> -->
+        <p style="color:white;margin: 0px;width: 100%;text-align: left;font-size: 20px">IAE ITB Admin Web - Opportunitites</p>
+        <!-- <p style="color:white;margin: 0px">Flowers</p> -->
+      </div>
+      <div
+        style="width: 100px;height:100%;display:flex;align-items:center;justify-content:space-around;flex-direction:row"
+      >
+        <!-- <div
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: white;border-radius: 15px"
+        >
+          <img [src]="this.cuacaHari2Icon" style="width: 40px;height:40px" />
+          <p
+            style="width: 100%;padding: 0px;margin: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            {{ this.Hari2 }}
+          </p>
+          <ion-badge *ngIf="this.Hari2 === moment().format('DD MMM')" color="warning">*</ion-badge>
+        </div> -->
+        <!-- <div
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: white;border-radius: 15px"
+        >
+          <img [src]="this.cuacaHari3Icon" style="width: 40px;height:40px" />
+          <p
+            style="width: 100%;padding: 0px;margin: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            {{ this.Hari3 }}
+          </p>
+          <ion-badge *ngIf="this.Hari3 === moment().format('DD MMM')" color="warning">*</ion-badge>
+        </div> -->
+        <div
+          style="width: 1px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: rgba(255,255,255,1);border-radius: 1px"
+        ></div>
+        <div
+          class="glowww"
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: rgba(255,255,255,1);border-radius: 15px"
+        >
+          <!-- <img
+            *ngIf="this.cuacaHariIniIcon !== ''"
+            [src]="this.cuacaHariIniIcon"
+            style="width: 40px;height:40px"
+          /> -->
+          <!-- <img
+            *ngIf="this.cuacaHariIniIcon !== ''"
+            src="../assets/IAELogoTransparent.png"
+            style="width: 40px;height:40px"
+          /> -->
+          <p
+            style="width: 100%;padding: 0px;margin: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            <b>{{this.HariIni.split(' ')[0]}}<br/>{{this.HariIni.split(' ')[1]}}<br/>{{this.HariIni.split(' ')[2]}}</b>
+          </p>
+          <!-- <ion-badge *ngIf="this.Hari5 === moment().format('DD MMM')" color="warning">*</ion-badge> -->
+        </div>
+        <!-- <div
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: rgba(255,255,255,1);border-radius: 15px"
+        >
+          <img [src]="this.cuacaLusaIcon" style="width: 40px;height:40px" />
+          <p
+            style="width: 100%;padding: 0px;margin: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            {{ this.Lusa }}
+          </p> -->
+        <!-- <ion-badge *ngIf="this.Hari6 === moment().format('DD MMM')" color="warning">*</ion-badge> -->
+        <!-- </div>
+        <div
+          style="width: 1px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: rgba(255,255,255,1);border-radius: 1px"
+        > -->
+        <!-- <img [src]="this.cuacaHariIniIcon" style="width: 40px;height:40px" />
+          <p
+            style="width: 100%;padding: 0px;margin: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            {{ this.HariIni }}
+          </p> -->
+        <!-- <ion-badge *ngIf="this.Hari4 === moment().format('DD MMM')" color="warning">*</ion-badge> -->
+        <!-- </div>
+        <div
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: rgba(255,255,255,1);border-radius: 15px;padding-top: 20px;"
+        >
+          <img src="./assets/icons8-temperature-filled-100.png" style="width: 20px;height:20px" />
+          <p
+            style="width: 100%;padding: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            25 °C
+          </p> -->
+        <!-- <ion-badge *ngIf="this.Hari0 === moment().format('DD MMM')" color="warning">*</ion-badge> -->
+        <!-- </div>
+        <div
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: rgba(255,255,255,1);border-radius: 15px;padding-top: 20px;"
+        >
+          <img src="./assets/icons8-wet-filled-100.png" style="width: 20px;height:20px" />
+          <p
+            style="width: 100%;padding: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            85 %
+          </p> -->
+        <!-- <ion-badge *ngIf="this.Hari1 === moment().format('DD MMM')" color="warning">*</ion-badge> -->
+        <!-- </div>
+        <div
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: rgba(255,255,255,1);border-radius: 15px;padding-top: 20px;"
+        >
+          <img src="./assets/icons8-summer-filled-50.png" style="width: 20px;height:20px" />
+          <p
+            style="width: 100%;padding: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            421 lx
+          </p> -->
+        <!-- <ion-badge *ngIf="this.Hari1 === moment().format('DD MMM')" color="warning">*</ion-badge> -->
+        <!-- </div>
+        <div
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: rgba(255,255,255,1);border-radius: 15px;padding-top: 20px;"
+        >
+          <img src="./assets/icons8-sprout-filled-50.png" style="width: 20px;height:20px" />
+          <p
+            style="width: 100%;padding: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            85 %
+          </p> -->
+        <!-- <ion-badge *ngIf="this.Hari1 === moment().format('DD MMM')" color="warning">*</ion-badge> -->
+        <!-- </div> -->
+        <!-- <div
+          style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: white;border-radius: 15px"
+        >
+          <img
+            src="./assets/icons8-bullet-camera-filled-100.png"
+            style="width: 30px;height:30px"
+          />
+          <p
+            style="width: 100%;padding: 0px;margin: 0px;text-align:center;font-size:11px;color:#1f2942"
+          >
+            cctv
+          </p>
+        </div> -->
+        <!-- <div style="width: 60px;height: 60px;display:flex;align-items:center;justify-content:center;flex-direction: column;background-color: white;border-radius: 15px">
+          <img [src]="this.cuacaLusaIcon" style="width: 40px;height:40px"/>
+          <p style="width: 100%;padding: 0px;margin: 0px;text-align:center;font-size:11px;color:#1f2942">{{this.Lusa}}</p>
+        </div> -->
+      </div>
+      <!-- <p style="background-color:#E6EEED;color: #414B59;padding: 8px;margin-left:100px;width:9.5%;text-align: center;border-radius: 15px;font-size: 13px;font-style: italic"><b>FARM</b></p>
+      <p style="color: #E6EEED;padding: 8px;margin-left:20px;width:9.5%;text-align: center;border-radius: 15px;font-size: 13px;font-style: italic"><b>INVENTORY</b></p>
+      <p style="color: #E6EEED;padding: 8px;margin-left:20px;width:9.5%;text-align: center;border-radius: 15px;font-size: 13px;font-style: italic"><b>SALES</b></p>
+      <p style="color: #E6EEED;padding: 8px;margin-left:20px;width:9.5%;text-align: center;border-radius: 15px;font-size: 13px;font-style: italic"><b>NEWS</b></p> -->
+    </div>
+  </ion-card>
+</ion-header>
+
+<ion-content>
+  <div
+    style="width:100%;display:flex;align-items:center;justify-content:center;flex-direction: column"
+    [ngStyle]="{ height: this.sisaHeaderHeight + 'px' }"
+    padding
+  >
+  <div
+        style="
+      width:100%; height:100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border:solid 0px black;
+    "
+      >
+        <ion-card
+        class="gloww"
+          style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        border-radius: 25px;
+        height: 100%;
+        background: white;
+        border: solid 1px #1f2942;
+      "
+        >
+          <img class="gelow" src="./assets/IAELogoTransparent.png" style="width: 300px;height: 300px"/>
+          <p style="color:#1f2942;font-style:italic">sorry ... this page is still under construction</p>
+        </ion-card>
+        <!-- <ion-card
+        class="gloww"
+          style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+        width: 30%;
+        border-radius: 25px;
+        height: 100%;
+        background: white;
+        border: solid 1px #1f2942;
+      "
+        >
+          <div
+
+            style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 100%;
+          height: 10%;
+          border-radius: 25px;
+          border: solid 0px #1f2942;
+          background: white;
+          
+        "
+          > -->
+            <!-- <p
+              style="background-color:transparent;color: #1f2942;padding: 0px;width:50%;text-align: center;border-radius: 15px;font-size: 12px;margin: 3px; font-style: italic"
+            >
+              <b *ngIf="this.estimasiPendapatan.length !== 0">{{this.estimasiPendapatan[0].nama_bulan}}</b>
+            </p>
+            <p
+              *ngIf="this.estimasiPendapatan.length !== 0"
+              style="color: #1f2942; margin : 0px;width: 80%;text-align: center;font-size: 10px;font-weight: bold"
+            >
+              Amount Rp
+              {{
+                this.estimasiPendapatan[0].estimasi_pendapatan.toLocaleString(
+                  "id-ID"
+                )
+              }},00
+            </p> -->
+            <!-- <p
+              style="background-color:transparent;color: #1f2942;padding: 0px;width:90%;text-align: center;border-radius: 15px;font-size: 12px;margin: 3px;"
+            >
+              <b>Request Pertemuan dari yang duluan request :</b>
+            </p>
+          </div>
+          <div
+            style="width:100%;height:1px;background-color:#1f2942"
+          ></div>
+          <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            height: 85%;
+            border-radius: 0px;
+            border: solid 0px #1f2942;
+            background: white;
+            overflow-x: auto;white-space: nowrap;
+          "
+          >
+          <div
+            *ngFor="let n of this.jadwals_request; let i = index"
+            style="min-height: 250px;width: 100% ;display: flex;align-items: center;justify-content: center;border-radius: 15px"
+          >
+          <div
+          class="gloww"
+          style="width:90%;height:80%;border: solid 1px #1f2942;border-radius: 25px;
+          display:flex;flex-direction:column;align-items:center;justify-content:flex-start
+          "
+        >
+          <div
+            style="width:100%;height:55%;border: solid 0px #1f2942;border-radius: 25px;
+            display:flex;flex-direction:row;align-items:center;justify-content:space-around
+            "
+          >
+            <div
+            class="gloww"
+            style="width: 55px;height: 55px;border:solid 1px #1f2942;border-radius: 45px;display: flex;align-items: center;justify-content: center"
+            >
+              <img src="./assets/icons8-checkmark-50.png" style="width:35px;height:35px"/>
+            </div>
+            <div
+              text-wrap
+              style="width:65%;height: 75px;border:solid 0px #1f2942;border-radius: 0px;display: flex;align-items: flex-start;justify-content: center;flex-direction: column"
+            >
+              <p style="width:100%;text-align:left;margin:0px;padding:0px;font-size: 10px">Tanggal : &nbsp; {{n.tanggal_kegiatan}} <br/>Waktu : &nbsp; {{n.waktu_kegiatan}} <br/>Nama Kegiatan : &nbsp; {{n.nama_kegiatan}}</p>
+            </div>
+          </div>
+          <div
+            style="width:100%;height:1px;background-color:#1f2942"
+          ></div> -->
+          <!-- <div style="width:100%;height:70%;flex-direction:row;align-items:center;justify-content:center"> -->
+            
+          <!-- </div> -->
+          <!-- <div text-wrap style="width:100%;height:45%;flex-direction:row;align-items:center;justify-content:center">
+            <p style="width:100%;text-align:justify;margin:0px;padding:5px;font-size: 10px">Deskripsi Singkat Kegiatan : <br/>{{n.deskripsi}}</p>
+          </div>
+        </div>
+          </div>
+          </div>
+          <div
+            style="width:100%;height:1px;background-color:#1f2942"
+          ></div>
+          <div
+
+            style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 100%;
+          height: 5%;
+          border-radius: 25px;
+          border: solid 0px #1f2942;
+          background: white;
+          
+        "
+          > -->
+            <!-- <p
+              style="background-color:transparent;color: #1f2942;padding: 0px;width:90%;text-align: center;border-radius: 15px;font-size: 12px;margin: 3px;"
+            >
+              <b>{{this.LusaFull}}</b>
+            </p> -->
+          <!-- </div>
+        </ion-card> -->
+      </div>
+  <!-- <ion-card
+    style="width:100%; height:85%;border: solid 1px #1f2942"
+  >
+    <div id="map" style="width:100%; height:100%"></div>
+  </ion-card> -->
+  </div>
+  <!-- <ion-card style="width:19.5%; height:70%;position: absolute;top:20px;right: 20px;display: flex;align-items: center;justify-content: flex-start;flex-direction: column">
+      <p style="background-color:#E6EEED;color: #414B59;padding: 8px;width:60%;text-align: center;border-radius: 15px;font-size: 13px;margin: 3px; font-style: italic"><b>UPDATE KEBUN</b></p>
+      <div style="width: 100%;display:flex;flex-direction: row;align-items:center;justify-content:space-around">
+          <p style="color:#A3B0BC;font-size: 11px;width: 60%;text-align: center">Keterangan</p>
+          <p style="color:#A3B0BC;font-size: 11px;width: 30%;text-align: center">Tanggal</p>
+      </div>
+      
+      <ion-card style="width: 90%;height: 12.5%;display: flex;align-items: center;justify-content: space-around;flex-direction: row">
+          <ion-checkbox style="--background-checked: #1f2942;--checkmark-color:white"></ion-checkbox>
+          <img src="./assets/avatar.png" style="width: 20px;height:20px"/>
+          <div style="width: 45%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">Lina Bo</p>
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">line@adobe.com</p>
+          </div>
+          <div style="width: 25%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">08 Sep</p>
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">2017</p>
+          </div>
+      </ion-card>
+      <ion-card style="width: 90%;height: 12.5%;display: flex;align-items: center;justify-content: space-around;flex-direction: row">
+          <ion-checkbox style="--background-checked: #1f2942;--checkmark-color:white"></ion-checkbox>
+          <img src="./assets/avatar.png" style="width: 20px;height:20px"/>
+          <div style="width: 45%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">Lina Bo</p>
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">line@adobe.com</p>
+          </div>
+          <div style="width: 25%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">08 Sep</p>
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">2017</p>
+          </div>
+      </ion-card>
+      <ion-card style="width: 90%;height: 12.5%;display: flex;align-items: center;justify-content: space-around;flex-direction: row">
+          <ion-checkbox style="--background-checked: #1f2942;--checkmark-color:white"></ion-checkbox>
+          <img src="./assets/avatar.png" style="width: 20px;height:20px"/>
+          <div style="width: 45%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">Lina Bo</p>
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">line@adobe.com</p>
+          </div>
+          <div style="width: 25%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">08 Sep</p>
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">2017</p>
+          </div>
+      </ion-card>
+      <ion-card style="width: 90%;height: 12.5%;display: flex;align-items: center;justify-content: space-around;flex-direction: row">
+          <ion-checkbox style="--background-checked: #1f2942;--checkmark-color:white"></ion-checkbox>
+          <img src="./assets/avatar.png" style="width: 20px;height:20px"/>
+          <div style="width: 45%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">Lina Bo</p>
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">line@adobe.com</p>
+          </div>
+          <div style="width: 25%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">08 Sep</p>
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">2017</p>
+          </div>
+      </ion-card>
+      <ion-card style="width: 90%;height: 12.5%;display: flex;align-items: center;justify-content: space-around;flex-direction: row">
+          <ion-checkbox style="--background-checked: #1f2942;--checkmark-color:white"></ion-checkbox>
+          <img src="./assets/avatar.png" style="width: 20px;height:20px"/>
+          <div style="width: 45%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">Lina Bo</p>
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">line@adobe.com</p>
+          </div>
+          <div style="width: 25%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">08 Sep</p>
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">2017</p>
+          </div>
+      </ion-card>
+      <ion-card style="width: 90%;height: 12.5%;display: flex;align-items: center;justify-content: space-around;flex-direction: row">
+          <ion-checkbox style="--background-checked: #1f2942;--checkmark-color:white"></ion-checkbox>
+          <img src="./assets/avatar.png" style="width: 20px;height:20px"/>
+          <div style="width: 45%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">Lina Bo</p>
+            <p style="color:#1f2942;margin: 0px;text-align: left;width: 100%;font-size: 11px">line@adobe.com</p>
+          </div>
+          <div style="width: 25%;height:null;display:flex;align-items: center;justify-content: center;flex-direction: column">
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">08 Sep</p>
+              <p style="color:#1f2942;margin: 0px;text-align: right;width: 100%;font-size: 11px">2017</p>
+          </div>
+      </ion-card>
+  </ion-card> -->
+  <!-- <img src="./assets/bukatoko@2x.png" style="position:absolute;top:150px;left: 12.5px;z-index: 1000;width: 10%;height: 17.5%;"/>
+  <img src="./assets/Inventory@2x.png" style="position:absolute;top:250px;left: 12.5px;z-index: 1000;width: 10%;height: 17.5%;"/>
+  <img src="./assets/OrderList@2x.png" style="position:absolute;top:350px;left: 12.5px;z-index: 1000;width: 10%;height: 17.5%;"/>
+  <img src="./assets/Unknown@2x.png" style="position:absolute;top:450px;left: 12.5px;z-index: 1000;width: 10%;height: 17.5%;"/> -->
+  <!-- <ion-card *ngIf="this.adaData" style="width: 20%;height:15%;border: 1px solid #1f2942; position: absolute;left:60px;bottom: 30px;display: flex;align-items: center;justify-content: center;flex-direction: column">
+    <p style="background-color:#E6EEED;color: #414B59;padding: 8px;width:60%;text-align: center;border-radius: 15px;font-size: 13px;margin: 3px; font-style: italic"><b>{{this.estimasiPendapatan[0].nama_bulan}}</b></p>
+    <p style="color: #1f2942; margin : 0px;width: 80%;text-align: center;font-size: 11px;font-weight: bold">Amount Rp {{this.estimasiPendapatan[0].estimasi_pendapatan.toLocaleString('id-ID')}},00</p>
+  </ion-card>
+  <ion-card *ngIf="this.adaData" style="width: 30%;height:15%;border: 1px solid #1f2942; position: absolute;left:425px;bottom: 30px;display: flex;align-items: center;justify-content: center;flex-direction: column">
+      <p style="background-color:#E6EEED;color: #414B59;padding: 8px;width:60%;text-align: center;border-radius: 15px;font-size: 13px;margin: 3px; font-style: italic"><b>{{this.estimasiPendapatan[1].nama_bulan}}</b></p>
+      <p style="color: #1f2942; margin : 0px;width: 80%;text-align: center;font-size: 11px;font-weight: bold">Amount Rp {{this.estimasiPendapatan[1].estimasi_pendapatan.toLocaleString('id-ID')}},00</p>
+  </ion-card>
+  <ion-card *ngIf="this.adaData" style="width: 20%;height:15%;border: 1px solid #1f2942; position: absolute;left:880px;bottom: 30px;display: flex;align-items: center;justify-content: center;flex-direction: column">
+      <p style="background-color:#E6EEED;color: #414B59;padding: 8px;width:60%;text-align: center;border-radius: 15px;font-size: 13px;margin: 3px; font-style: italic"><b>{{this.estimasiPendapatan[2].nama_bulan}}</b></p>
+      <p style="color: #1f2942; margin : 0px;width: 80%;text-align: center;font-size: 11px;font-weight: bold">Amount Rp {{this.estimasiPendapatan[2].estimasi_pendapatan.toLocaleString('id-ID')}},00</p>
+  </ion-card>    -->
+  <!-- <div style="width: 20%;height:15%;border: 1px solid transparent; position: absolute;left:930px;bottom: 30px;display: flex;align-items: center;justify-content: center;flex-direction: column">
+      <img src="./assets/chatpekerja.png" style="width: 50%;height:90%"/>
+  </div> -->
+  <!-- <div
+    style="
+      width:87.5%; height:20%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 60px;
+      border: solid 0px #1f2942;
+      top: 20px;
+    "
+  >
+    <ion-card
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 26.5%;
+        height: 75%;
+        background: #1f2942;
+        box-sizing: border-box;
+        -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 98%;
+          height: 98%;
+          background: white;
+          box-sizing: border-box;
+          -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        "
+      >
+        <p
+          style="background-color:#E6EEED;color: #414B59;padding: 8px;width:40%;text-align: center;border-radius: 15px;font-size: 13px;margin: 3px; font-style: italic"
+        >
+          <b>{{ this.estimasiPendapatan[0].nama_bulan }}</b>
+        </p>
+        <p
+          style="color: #1f2942; margin : 0px;width: 80%;text-align: center;font-size: 11px;font-weight: bold"
+        >
+          Amount Rp
+          {{
+            this.estimasiPendapatan[0].estimasi_pendapatan.toLocaleString(
+              "id-ID"
+            )
+          }},00
+        </p>
+      </div>
+    </ion-card>
+    <ion-card
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 26.5%;
+        height: 75%;
+        background: #1f2942;
+        box-sizing: border-box;
+        -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 98%;
+          height: 98%;
+          background: white;
+          box-sizing: border-box;
+          -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        "
+      >
+        <p
+          style="background-color:#E6EEED;color: #414B59;padding: 8px;width:40%;text-align: center;border-radius: 15px;font-size: 13px;margin: 3px; font-style: italic"
+        >
+          <b>{{ this.estimasiPendapatan[1].nama_bulan }}</b>
+        </p>
+        <p
+          style="color: #1f2942; margin : 0px;width: 80%;text-align: center;font-size: 11px;font-weight: bold"
+        >
+          Amount Rp
+          {{
+            this.estimasiPendapatan[1].estimasi_pendapatan.toLocaleString(
+              "id-ID"
+            )
+          }},00
+        </p>
+      </div>
+    </ion-card>
+    <ion-card
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 26.5%;
+        height: 75%;
+        background: #1f2942;
+        box-sizing: border-box;
+        -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          width: 98%;
+          height: 98%;
+          background: white;
+          box-sizing: border-box;
+          -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        "
+      >
+        <p
+          style="background-color:#E6EEED;color: #414B59;padding: 8px;width:40%;text-align: center;border-radius: 15px;font-size: 13px;margin: 3px; font-style: italic"
+        >
+          <b>{{ this.estimasiPendapatan[2].nama_bulan }}</b>
+        </p>
+        <p
+          style="color: #1f2942; margin : 0px;width: 80%;text-align: center;font-size: 11px;font-weight: bold"
+        >
+          Amount Rp
+          {{
+            this.estimasiPendapatan[2].estimasi_pendapatan.toLocaleString(
+              "id-ID"
+            )
+          }},00
+        </p>
+      </div>
+    </ion-card>
+  </div> -->
+</ion-content>

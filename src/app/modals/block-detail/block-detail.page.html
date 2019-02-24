@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="this.pilihan === 1" style="color:darkseagreen;font-weight: bold">Status Detail</ion-title>
+    <ion-title *ngIf="this.pilihan === 0" style="color:red;font-weight: bold">Problem Alert</ion-title>
+    <ion-title *ngIf="this.pilihan === 3" style="color:darkseagreen;font-weight: bold">Issue Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p>{{no_bed_or_tlg}}</p>
+  <p *ngIf="this.pilihan === 1">{{crop_di_tanam}}</p>
+  <p *ngIf="this.pilihan === 1">Tanggal Tanam : {{tgl_mulai}}</p>
+  <p *ngIf="this.pilihan === 1">Tanggal Panen : {{tgl_actual_panen}}</p>
+  <p *ngIf="this.pilihan === 1">Jumlah : {{jumlah}} {{satuan}}</p>
+  <p *ngIf="this.pilihan === 1">Umur Tanaman : {{this.umur}} Minggu</p>
+  <p *ngIf="this.pilihan === 1">Keterangan : {{this.keterangan}}</p>
+  <p *ngIf="this.pilihan === 0">Issue : {{this.keterangan}}</p>
+  <p *ngIf="this.pilihan === 3">Issue : {{this.keterangan}}</p>
+  <div *ngIf="this.pilihan === 0" style="width: 100%;height: 35px;display: flex; align-items:center;justify-content:center;position: absolute;bottom: 20px">
+    <div (click)="kirimTugas()" style="width: 30%;height: 35px;display: flex; align-items:center;justify-content:center;background-color:mediumseagreen;border-radius: 20px">
+      <p style="width: 100%;text-align:center;color: white">Send Task</p>
+    </div>
+  </div>
+  <div *ngIf="this.pilihan === 3" style="width: 100%;height: 35px;display: flex; align-items:center;justify-content:center;position: absolute;bottom: 20px">
+      <div (click)="taskProgress()" style="width: 30%;height: 35px;display: flex; align-items:center;justify-content:center;background-color:mediumseagreen;border-radius: 20px">
+        <p style="width: 100%;text-align:center;color: white">Task Progress</p>
+      </div>
+    </div>
+</ion-content>

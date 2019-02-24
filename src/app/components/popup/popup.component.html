@@ -1,0 +1,19 @@
+<div padding
+  style="
+    width: 200px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+  "
+>
+  <p class=".gelow" (click)="this.goToDetail()" style="width: 100%; margin:0px;padding: 0px;font-size: 14px;text-align:center;color: green;margin-bottom: 5px"><u>{{this.nama_gh}}</u></p>
+  <p style="width: 100%; margin:0px;padding: 0px;font-size: 12px;text-align:left"><b>Luas</b> : {{this.luas}}</p>
+  <p style="width: 100%; margin:0px;padding: 0px;font-size: 12px;text-align:left"><b>Alamat</b> : {{this.alamat}}</p>
+  <p style="width: 100%; margin:0px;padding: 0px;font-size: 12px;text-align:left"><b>Komoditas</b> : {{this.komoditas}}</p>
+  <p class=".gelow" *ngIf="this.adaMasalah === true" (click)="this.goToDetail2()" style="width: 100%; margin:0px;padding: 0px;font-size: 14px;text-align:center;color: red;margin-top: 0px"><u>Help me!</u></p>
+</div>

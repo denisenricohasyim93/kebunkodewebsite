@@ -1,0 +1,139 @@
+<!-- <ion-split-pane> -->
+  <ion-menu *ngIf="munculin" contentId="content" class="my-custom-menu">
+ 
+    <ion-header style="height: 100px;background-color: #3B3C51">
+        <div style="background-color: transparent;width: 100%;height: 100px;align-items: center;justify-content: space-around;display: flex;flex-direction: row;">
+          <img src="./assets/IAELogoTransparent.png" style="width: 70px;height:70px;"/>
+          <p style="text-align: left;font-weight: bold;color: white" margin padding>
+              IAE ITB Admin Web 
+          </p>
+        </div>
+    </ion-header>
+    <ion-content style="--background:#43435B no-repeat center center / cover;display: flex;">
+      <ion-list style="background: transparent">
+        <ion-menu-toggle auto-hide="false" style="background-color: transparent">
+          <div class="glowww" style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'usersettings'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:usersettings)'">
+            <ion-icon name="person" style="color:white;margin-left: 10px"></ion-icon>
+            <p style="text-align: left;color: white;margin-left: 10px">
+              User Settings
+            </p>
+          </div>
+          <div class="glowww" style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'home'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:home)'">
+            <ion-icon name="paper" style="color:white;margin-left: 10px"></ion-icon>
+            <p style="text-align: left;color: white;margin-left: 10px">
+              Feeds Settings
+            </p>
+          </div>
+          <div class="glowww" style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'komoditas'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:komoditas)'">
+            <ion-icon name="browsers" style="color:white;margin-left: 10px"></ion-icon>
+            <p style="text-align: left;color: white;margin-left: 10px">
+              Events Settings
+            </p>
+          </div>
+          <div class="glowww" style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'realtimeshop'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:realtimeshop)'">
+            <ion-icon name="images" style="color:white;margin-left: 10px"></ion-icon>
+            <p style="text-align: left;color: white;margin-left: 10px">
+              Photo Galleries Settings
+            </p>
+          </div>
+          <div class="glowww" style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'settings'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:settings)'">
+            <ion-icon name="briefcase" style="color:white;margin-left: 10px"></ion-icon>
+            <p style="text-align: left;color: white;margin-left: 10px">
+              Opportunities Settings
+            </p>
+          </div>
+          
+          <!-- <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'inventory'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:inventory)'">
+            <ion-icon name="list-box" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Inventory
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'aturkebun'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:aturkebun)'">
+            <ion-icon name="calendar" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Atur Kebun
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'settings'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:settings)'">
+            <ion-icon name="cog" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Settings
+            </p>
+          </div> -->
+          <!-- <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'dashboard'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:dashboard)'">
+            <ion-icon name="speedometer" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Dashboard
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;">
+            <ion-icon name="send" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Products
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-end;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'komoditas'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:komoditas)'">
+            <p class="gelow" style="text-align: left;color: white;margin-left: 5px;margin-right: 10px;width: 50%">
+               Komoditas
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-end;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'perlengkapan'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:perlengkapan)'">
+            <p class="gelow" style="text-align: left;color: white;margin-left: 5px;margin-right: 10px;width: 50%">
+               Perlengkapan
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-end;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'pupukataupestisida'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:pupukataupestisida)'">
+            <p class="gelow" style="text-align: left;color: white;margin-left: 5px;margin-right: 10px;width: 50%">
+               Pupuk atau Pestisida
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'realtimeshop'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:realtimeshop)'">
+            <ion-icon name="person" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Real Time Shop
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'inventory'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:inventory)'">
+            <ion-icon name="list-box" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Inventory
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'aturkebun'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:aturkebun)'">
+            <ion-icon name="calendar" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Atur Kebun
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'settings'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:settings)'">
+            <ion-icon name="cog" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Settings
+            </p>
+          </div> -->
+          <!-- <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'first'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:first)'">
+            <p style="text-align: left;color: white" margin padding>
+              First Page
+            </p>
+          </div>
+          <div style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" [routerLink]="['/menu',{outlets:{menuoutlet:'second'}}]" [class.active-item]="selectedPath === '/menu/(menuoutlet:second)'">
+            <p style="text-align: left;color: white" margin padding>
+              Second Page
+            </p>
+          </div> -->
+          <div class="glowww" style="background-color: transparent;width: 100%;height: 50px;align-items: center;justify-content: flex-start;display: flex;flex-direction: row;" (click)="keluar()">
+            <ion-icon name="exit" style="color:white;margin-left: 10px"></ion-icon>
+            <p class="gelow" style="text-align: left;color: white;margin-left: 10px">
+              Exit
+            </p>
+          </div>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+ 
+  </ion-menu>
+ 
+  <ion-router-outlet *ngIf="munculin" name="menuoutlet" id="content" main></ion-router-outlet>
+ 
+<!-- </ion-split-pane> -->
