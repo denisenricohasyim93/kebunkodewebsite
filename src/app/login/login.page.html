@@ -1,16 +1,17 @@
 <ion-content *ngIf="munculin">
   <div [ngStyle]="{'height': height+'px'}" style="width: 100%;display:flex;align-items:center;justify-content:center;flex-direction:column;background-color: #FFFCF0">
-      <img class="gelow" src="./assets/IAELogoTransparent.png" style="width: 350px;height: 350px"/>
+      <img class="gelow" src="./assets/KebunKodeOnlyTreeTransparent.png" style="width: 350px;height: 350px"/>
+      <p class="gelow" style="text-align:center;font-size: 50px;margin: 0px;padding: 0px;color: #404d95 ">Kebun Kode</p>
       <div id="container">
           <!-- <ion-list style="background-color: transparent"> -->
-              <ion-card class="gelow" id="rounded" [ngStyle]="{'width': widthTextInput+'px'}">
+              <!-- <ion-card class="gelow" id="rounded" [ngStyle]="{'width': widthTextInput+'px'}">
                 <ion-input clearInput (ionChange)="changeEmail($event)" [value]="email" id="masuk" placeholder=" put admin email here"></ion-input>
               </ion-card>
               <ion-card class="gelow" id="rounded" [ngStyle]="{'width': widthTextInput+'px'}">
                 <ion-input clearInput (ionChange)="changePassword($event)" [value]="password" id="masuk" placeholder=" put password here" type="Password"></ion-input>
-              </ion-card>
+              </ion-card> -->
               <ion-card class="gelow" (click)="submit()" id="button" [ngStyle]="{'width': widthTextInput+'px'}">
-                <p style="text-align:center;color: white;font-weight: bold;font-size: 15px;margin: 5px">LOGIN</p>
+                <p style="text-align:center;color: white;font-weight: bold;font-size: 25px;margin: 5px">Let's Get In</p>
               </ion-card>
             <!-- </ion-list> -->
       </div>

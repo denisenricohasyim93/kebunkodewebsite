@@ -16,12 +16,14 @@
 }
 
 @font-face {
-  font-family: "Comfortaa-Regular";
-  src: url("./assets/Comfortaa-Regular.ttf"); //mine
+  font-family: "Oregano-Regular";
+  src: url("./assets/Oregano-Regular.ttf"); //mine
 }
 
 * {
-  font-family: "Comfortaa-Regular";
+  font-family: "Oregano-Regular";
+  font-size:15px;
+  letter-spacing: 1.5px;
 }
 
 .gelow {

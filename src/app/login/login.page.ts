@@ -111,22 +111,22 @@ export class LoginPage implements OnInit {
     //       await alert.present();
     //     }
     // });
-    if (this.email === 'admin@iaeitb.com' && this.password === 'iaeitbjayaselalu') {
+    // if (this.email === 'admin@iaeitb.com' && this.password === 'iaeitbjayaselalu') {
       await this.storage.set('login', 'true');
       if (this.router.navigated) {
         window.location.reload()
       } else {
         await this.router.navigate(['/menu'])
       }
-    } else {
-      const alert = await this.alertController.create({
-        header: 'Alert',
-        subHeader: 'Login Alert',
-        message: 'Maaf, Anda belum beruntung',
-        buttons: ['OK']
-      });
-      await alert.present();
-    }
+    // } else {
+    //   const alert = await this.alertController.create({
+    //     header: 'Alert',
+    //     subHeader: 'Login Alert',
+    //     message: 'Maaf, Anda belum beruntung',
+    //     buttons: ['OK']
+    //   });
+    //   await alert.present();
+    // }
   }
 
   changeEmail(event) {

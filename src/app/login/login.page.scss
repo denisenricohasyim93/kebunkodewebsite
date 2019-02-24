@@ -1,5 +1,5 @@
 #rounded {
-    border: solid 1px black;
+    border: solid 1px #404d95;
     border-radius: 25px;
     padding: 5px;
     margin: 10px; 
@@ -7,18 +7,18 @@
 }
 
 #button {
-    border: solid 1px black;
+    border: solid 1px #404d95;
     border-radius: 25px;
     padding: 10px;
     margin: 10px; 
-    background-color: #865EB4;
+    background-color: #404d95;
 }
 
 #masuk {
-    --placeholder-color: black; 
+    --placeholder-color: #404d95; 
     --placeholder-font-style: italic;
     --placeholder-opacity: 1;
-    --color: black;
+    --color: #404d95;
 }
 
 #container {
